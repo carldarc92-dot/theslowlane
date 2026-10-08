@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | The Slow Lane</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+        /* Overlay to ensure text readability against the background */
+        .bg-overlay {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(250, 250, 250, 0.85); /* Slightly transparent overlay */
+            z-index: -1;
+        }
+
+        /* Fixed background image container */
+        .bg-image-container {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            overflow: hidden;
+        }
+
+        .bg-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* Ensuring content stays above the overlay */
+        .content-layer {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen">
+    
+    <div class="bg-image-container">
+        <img src="stainedglass-hongkong-1.jpg" alt="Stained glass pattern background">
+    </div>
+    <div class="bg-overlay"></div>
+    
+    <main class="content-layer max-w-4xl mx-auto px-6 py-16 md:py-24">
+        
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-light tracking-wide text-gray-900 mb-4">The slow lane</h1>
+            <div class="w-24 h-1 bg-gray-300 mx-auto rounded"></div>
+        </header>
+
+        <article class="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden">
+            <div class="w-full h-64 md:h-96 overflow-hidden relative">
+                <img src="PXL_20221014_111309381.jpg" alt="Puiming and Cathal looking over the Hong Kong skyline at night" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105">
+            </div>
+
+            <div class="p-8 md:p-12">
+                <div class="space-y-6 text-lg leading-relaxed text-gray-700 font-light">
+                    <p>
+                        Our journey together started in the fast lane of the busiest city in the world; Hong Kong. Speed may have brought us together, but today we embrace an entirely different rhythm. The world moves ever faster, but to what end? The slow lane encapsulates our lived response. 
+                    </p>
+                    
+                    <p>
+                        Through our process we endeavour to act purposefully, intentionally and allow ample space for reflection and change. Thus, we challenge what was thought to be the correct path or approach at the outset.
+                    </p>
+
+                    <div class="my-10">
+                        <img src="PXL_20260905_113624383.jpg" alt="Close up detail of textured, tactile artwork" class="w-full h-auto rounded-lg shadow-md max-h-96 object-cover block mx-auto">
+                        <p class="text-sm text-gray-500 mt-3 text-center italic">"To be tactile with materials is traction."</p>
+                    </div>
+
+                    <p>
+                        We do not produce a large volume of work and use our bare hands as opposed to mechanisation. To be tactile with materials is traction. Thus we enjoy a more meandering, present journey to the end product, which invariably is only somewhat like what we planned at the outset. 
+                    </p>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-gray-200 text-center">
+                    <p class="text-2xl font-serif italic text-gray-900">Puiming & Cathal</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+</body>
+</html>
